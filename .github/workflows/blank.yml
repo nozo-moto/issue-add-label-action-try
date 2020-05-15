@@ -13,6 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run a multi-line script
+      if: ${{ github.event.label.name == 'bug' }}
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
