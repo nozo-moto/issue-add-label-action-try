@@ -18,3 +18,6 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
         echo ${{ github.event.label.name }}
+        echo ${{ github.event.issue.name }}
+        echo ${{ github.event.issue.html_url }}
+        echo ${{ github.event.issue.title }}
